@@ -1,0 +1,12 @@
+(library
+ (name game)
+ (public_name Game)
+ (libraries
+  yojson
+  ANSITerminal
+  graphics
+  camlimages.core
+  camlimages.graphics
+  camlimages.jpeg)
+ (instrumentation
+  (backend bisect_ppx)))

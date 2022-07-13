@@ -1,0 +1,29 @@
+Dependencies: (GRAPHICAL INTERFACE WILL NOT RUN WITHOUT ALL)
+
+X11 must be supported by your system:
+Instructions for installation and configuration:
+WSL2:
+https://www.youtube.com/watch?v=4SZXbl9KVsw&t=2s
+WSL1:
+https://www.youtube.com/watch?v=68_FgUGQGhc
+MAC:
+Install xquartz
+https://www.xquartz.org/
+
+
+Graphics Library
+    $ opam install graphics
+
+CamlImages Library
+First install jpeg dependencies before camlimages
+
+LINUX(WSL) (libjpeg-dev):
+    $ sudo apt install libjpeg-dev
+MAC:
+    brew install libjpeg
+More info Here: https://stackoverflow.com/questions/24805385/camlimages-fatal-error-exception-failureunsupported 
+
+Second, install the actual ocaml library camlimages
+    $ opam install camlimages
+
+$ make play to run the game,  $ make docs to create documentation, $ make test to run the test suite
